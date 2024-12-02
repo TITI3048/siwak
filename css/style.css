@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f5f5dc, #8f9779, #a0522d);
+    background: linear-gradient(135deg, #f5f5dc, #b2bb96, #f09469);
     background-attachment: fixed;
     background-size: cover;
     color: #3e3d32; /* Couleur de texte naturel */
@@ -46,18 +46,53 @@ body {
     background-image: linear-gradient(#3e3d32, #3e3d32); /* Marron foncé */
 }
 
+.navbar .fa-shopping-cart {
+    font-size: 1.2rem; /* Taille de l'icône */
+    color: #8f9779; /* Couleur correspondant au thème naturel */
+    transition: color 0.3s ease;
+}
+
+.navbar .fa-shopping-cart:hover {
+    color: #5b6d4f; /* Couleur plus foncée au survol */
+}
+
+.navbar-logo {
+    height: 100px; /* Ajustez la hauteur selon vos besoins */
+    width: 100px; /* Maintient les proportions de l'image */
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
 
 footer {
     background-color: #3e3d32; /* Marron foncé */
     color: #ffffff;
 }
 
+.social-icons a {
+    color: #ffffff; /* Couleur blanche */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fbc531; /* Couleur jaune (Snapchat) */
+    transform: scale(1.2); /* Effet zoom */
+}
+
+.social-icons i {
+    margin: 0 10px;
+    font-size: 1.5rem; /* Taille des icônes */
+}
+
+
 .card {
     border: none;
     background-color: #f5f5dc; /* Beige clair */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .card:hover {
@@ -127,4 +162,28 @@ footer {
     font-weight: bold;
     border-radius: 4px; /* Coins arrondis */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
