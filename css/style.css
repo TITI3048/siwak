@@ -115,3 +115,16 @@ footer {
 .product-image:hover .img-hover {
     opacity: 1; /* Afficher l'image de survol */
 }
+
+.stock-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #8f9779; /* Vert olive */
+    color: #fff; /* Texte blanc */
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
