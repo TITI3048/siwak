@@ -87,13 +87,20 @@
 
     <main class="container my-5">
         <div class="row">
+            
             <div class="col-md-4">
                 <div class="card">
-                    <div class="product-image">
-                        <img src="/image/dentifrice.webp" class="img-default" alt="dentifrice miswak">
-                        <img src="/image/dent.webp" class="img-hover" alt="dent avec et sans Siwak">
-                        <div class="stock-label">En stock</div>
-                    </div>
+                    <!-- Lien cliquable vers la page produit -->
+                    <a href="product_dentifrice.html" class="stretched-link">
+                        <div class="product-image position-relative">
+                            <img src="/image/dentifrice.webp" class="img-default" alt="dentifrice miswak">
+                            <img src="/image/dent.webp" class="img-hover" alt="dent avec et sans Siwak">
+                            <!-- Badge de stock -->
+                            <div class="stock-label position-absolute bottom-0 start-0 bg-success text-white px-2 py-1">
+                                En stock
+                            </div>
+                        </div>
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Dentifrice Miswak</h5>
                         <p class="card-text">Dentifrice Miswak (120G + 50G)</p>

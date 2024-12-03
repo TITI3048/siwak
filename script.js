@@ -31,3 +31,19 @@
             return "Réseau social";
         }
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartContainer = document.getElementById("cart-items");
+
+        if (cartItems.length === 0) {
+            cartContainer.innerHTML = "<p>Votre panier est vide.</p>";
+        } else {
+            let total = 0;
+            cartContainer.innerHTML = cartItems.map(item => {
+                total += item.price;
+                return `<p>${item.name} - ${item.price.toFixed(2)}€</p>`;
+            }).join("");
+            cartContainer.innerHTML += `<h3>Total : ${total.toFixed(2)}€</h3>`;
+        }
+    });
