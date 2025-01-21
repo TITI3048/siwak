@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dentifrice Miswak - Présentation</title>
+    <title>Siwak Arôme Fraise - Présentation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f5dc, #b2bb96, #f09469);
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0, #f09469);
             background-attachment: fixed;
             background-size: cover;
             color: #3e3d32;
@@ -18,7 +18,7 @@
         }
 
         .custom-header {
-            background-color: #faf3e0;
+            background-color: #ffe6f2;
             color: #3e3d32;
             width: 100%;
             position: fixed;
@@ -37,11 +37,11 @@
         }
 
         .custom-navbar .nav-link:hover {
-            color: #8f9779;
+            color: #d81b60;
         }
 
         .custom-navbar .nav-link.active {
-            color: #6b7b5f;
+            color: #ad1457;
             font-weight: bold;
         }
 
@@ -51,12 +51,12 @@
 
         .navbar .fa-shopping-cart {
             font-size: 1.2rem;
-            color: #8f9779;
+            color: #d81b60;
             transition: color 0.3s ease;
         }
 
         .navbar .fa-shopping-cart:hover {
-            color: #5b6d4f;
+            color: #ad1457;
         }
 
         .content {
@@ -64,7 +64,7 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 100px; /* Pour éviter le chevauchement avec la navbar */
+            margin-top: 100px;
         }
 
         .quantity-control {
@@ -72,7 +72,7 @@
         }
 
         .quantity-control button {
-            background: #8f9779;
+            background: #d81b60;
             color: white;
             border: none;
             padding: 5px 15px;
@@ -159,10 +159,10 @@
 
     <!-- Contenu principal -->
     <div class="content">
-        <h1>Dentifrice Miswak</h1>
-        <img src="/image/dentifrice.webp" alt="Dentifrice Miswak" style="width: 500px; margin-bottom: 1rem;">
-        <p>Le dentifrice Miswak combine les bienfaits naturels de la plante avec une fraîcheur incomparable.</p>
-        <h3>Prix unitaire : <span id="price">12€</span></h3>
+        <h1>Siwak Arôme Fraise</h1>
+        <img src="/image/fraise.webp" alt="Siwak Arôme Fraise" style="width: 500px; margin-bottom: 1rem;">
+        <p>Le Siwak Arôme Fraise offre une expérience bucco-dentaire naturelle avec une touche fruitée.</p>
+        <h3>Prix unitaire : <span id="price">5,99€</span></h3>
 
         <!-- Contrôle de la quantité -->
         <div class="quantity-control d-flex justify-content-center align-items-center">
@@ -170,39 +170,30 @@
             <span id="quantity">1</span>
             <button id="increase">+</button>
         </div>
-        <h3>Total : <span id="total">12€</span></h3>
+        <h3>Total : <span id="total">5,99€</span></h3>
         <button id="validate">Valider</button>
     </div>
 
-    <section class="explanation py-5" style="background-color: #faf3e0; border-radius: 10px; margin-top: 2rem;">
+    <section class="explanation py-5" style="background-color: #ffe6f2; border-radius: 10px; margin-top: 2rem;">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Colonne pour l'image -->
                 <div class="col-md-6 text-center">
-                    <img src="/image/IMG-20250121-WA0011.jpg" alt="Dentifrice Miswak" class="img-fluid rounded" style="max-width: 90%;">
+                    <img src="/image/IMG-20250121-WA0016.jpg" alt="Siwak Arôme Fraise" class="img-fluid rounded" style="max-width: 90%;">
                 </div>
-                <!-- Colonne pour le texte -->
                 <div class="col-md-6">
-                    <h2>Pourquoi choisir le dentifrice Miswak ?</h2>
+                    <h2>Pourquoi choisir le Siwak Arôme Fraise ?</h2>
                     <p class="mt-3" style="line-height: 1.8; font-size: 1.1rem;">
-                        Le dentifrice Miswak est fabriqué à partir d'extraits naturels de la racine de la plante Salvadora persica, 
-                        utilisée depuis des siècles pour ses propriétés bénéfiques pour la santé bucco-dentaire. Ce dentifrice :
+                        Ce siwak naturel, enrichi d’un arôme fruité, offre une haleine fraîche tout en prenant soin de vos dents et gencives.
                     </p>
                     <ul style="line-height: 1.8; font-size: 1.1rem;">
-                        <li><strong>Renforce les gencives</strong> grâce à ses composants antibactériens naturels.</li>
-                        <li><strong>Blanchit les dents</strong> en douceur sans endommager l'émail.</li>
-                        <li><strong>Combat la mauvaise haleine</strong> en procurant une sensation de fraîcheur durable.</li>
-                        <li><strong>Respecte l'environnement</strong> grâce à des ingrédients naturels et biologiques.</li>
+                        <li><strong>Haleine fruitée :</strong> Un goût agréable de fraise naturelle.</li>
+                        <li><strong>Santé buccale :</strong> Protège contre les caries et renforce les gencives.</li>
+                        <li><strong>Écologique :</strong> Biodégradable et respectueux de l'environnement.</li>
                     </ul>
-                    <p class="mt-3" style="line-height: 1.8; font-size: 1.1rem;">
-                        Faites un geste pour votre santé et pour la planète en choisissant un produit éco-responsable et efficace. 
-                        Rejoignez la communauté Miswak dès aujourd'hui !
-                    </p>
                 </div>
             </div>
         </div>
     </section>
-    
 
     <!-- Footer -->
     <footer>
@@ -221,7 +212,7 @@
     </footer>
 
     <script>
-        const unitPrice = 12;
+        const unitPrice = 5.99;
         const quantityDisplay = document.getElementById("quantity");
         const totalDisplay = document.getElementById("total");
         const increaseButton = document.getElementById("increase");
@@ -248,6 +239,3 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
