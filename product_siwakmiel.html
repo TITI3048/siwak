@@ -57,7 +57,7 @@
 </head>
 
 <body>
-    <header class="custom-header">
+    <header class="custom-header text-white text-center py-4">
         <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -70,13 +70,32 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/index.html">À propos</a>
+                            <a class="nav-link active" href="#about">À propos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products">Produits</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Produits
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="/product_dentifrice.html">Dentifirce Miswak</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakfraise.html">Siwak Fraise</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakcitron.html">Siwak Citron</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakgirofle.html">Siwak Girofle</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakoriginal.html">Siwak Original</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakmiel.html">Siwak Miel</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakmenthe.html">Siwak Menthe</a></li>
+                                <li><a class="dropdown-item" href="/product_siwaknature.html">Siwak Naturel</a></li>
+                                <li><a class="dropdown-item" href="/product_siwakpremium.html">Siwak Premium</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart">
+                                <i class="fas fa-shopping-cart"></i> Panier
+                            </a>
                         </li>
                     </ul>
                 </div>
